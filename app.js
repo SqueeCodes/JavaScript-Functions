@@ -52,7 +52,17 @@
 // }
 // console.log(isEven(2))
 
-function isLoggedInAndSubscribed(loggedIn, subscribed) {
-    return (loggedIn === 'LOGGED_IN') && (subscribed === 'SUBSCRIBED')
+// function isLoggedInAndSubscribed(loggedIn, subscribed) {
+//     return (loggedIn === 'LOGGED_IN') || (subscribed === 'SUBSCRIBED')
+// }
+// console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'))
+
+// function falseyOrTruthy (elem1, elem2) {
+//     return !!elem1 ? elem1 : elem2
+// }
+// console.log(falseyOrTruthy(12, undefined))
+
+function lengthArray(arr) {
+    return arr.length
 }
-console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+console.log(lengthArray([1, 2, 3, 4, 10]))
