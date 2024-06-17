@@ -78,11 +78,22 @@
 
 // console.log(arrSum([2, 2, 2]));
 
-function progeressiveSum(num) {
-    let sum = 0;
-    for (let i = 1; i <= num; ++i) {
-        sum = sum + i;
+// function progeressiveSum(num) {
+//     let sum = 0;
+//     for (let i = 1; i <= num; ++i) {
+//         sum = sum + i;
+//     }
+//     return sum
+// }
+// console.log(progeressiveSum(4))
+
+function calcTime(seconds) {
+    timerMinutes = Math.floor(seconds / 60);
+    let timerSeconds = seconds % 60;
+    if (timerMinutes.toString().length === 1) {
+        timerMinutes = '0' + timerMinutes
     }
-    return sum
+
+    return timerMinutes + ':' + timerSeconds;
 }
-console.log(progeressiveSum(4))
+console.log(calcTime(90))
