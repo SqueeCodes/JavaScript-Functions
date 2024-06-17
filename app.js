@@ -129,10 +129,6 @@
 // console.log(arrReverse('David'));
 
 function convertToZeros(arr) {
-    let newArr = [];
-   for (let i = 0; i <arr.length; ++i) {
-       newArr[i] = 0
-    }
-    return newArr;
+  return new Array(arr.length).fill(0)
 }
 console.log(convertToZeros([5, 100, 0]))
