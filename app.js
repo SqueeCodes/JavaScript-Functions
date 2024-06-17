@@ -87,13 +87,27 @@
 // }
 // console.log(progeressiveSum(4))
 
-function calcTime(seconds) {
-    timerMinutes = Math.floor(seconds / 60);
-    let timerSeconds = seconds % 60;
-    if (timerMinutes.toString().length === 1) {
-        timerMinutes = '0' + timerMinutes
-    }
+// function calcTime(seconds) {
+//     timerMinutes = Math.floor(seconds / 60);
+//     let timerSeconds = seconds % 60;
+//     if (timerMinutes.toString().length === 1) {
+//         timerMinutes = '0' + timerMinutes
+//     }
 
-    return timerMinutes + ':' + timerSeconds;
+//     return timerMinutes + ':' + timerSeconds;
+// }
+// console.log(calcTime(90))
+
+
+function getMax(arr) {
+let maxIndex = arr[0]
+
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] > maxIndex) {
+            maxIndex = arr[i];
+            }
+        }
+    return maxIndex
+
 }
-console.log(calcTime(90))
+console.log(getMax([-100, -400, -200]))
