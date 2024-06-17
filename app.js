@@ -62,7 +62,18 @@
 // }
 // console.log(falseyOrTruthy(12, undefined))
 
-function lengthArray(arr) {
-    return arr.length
+// function lengthArray(arr) {
+//     return arr[arr.length -1];
+// }
+// console.log(lengthArray([1, 2, 3, 4, 10]))
+
+function arrSum(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; ++i) {
+        sum = sum + arr[i];
+    }
+    return sum;
+
 }
-console.log(lengthArray([1, 2, 3, 4, 10]))
+
+console.log(arrSum([2, 2, 2]));
