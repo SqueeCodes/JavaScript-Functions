@@ -24,3 +24,15 @@
 // }
 
 // console.log(lessThanOrEquals(-1))
+
+// function oppositeBoolean(bool) {
+//     return !bool;
+  
+// }
+
+// console.log(oppositeBoolean(true));
+
+function isNotZero(number) {
+    return number !== 0
+}
+console.log(isNotZero(0))
