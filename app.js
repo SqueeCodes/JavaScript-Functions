@@ -128,7 +128,12 @@
 // }
 // console.log(arrReverse('David'));
 
-function convertToZeros(arr) {
-  return new Array(arr.length).fill(0)
-}
-console.log(convertToZeros([5, 100, 0]))
+// function convertToZeros(arr) {
+//   return new Array(arr.length).fill(0)
+// }
+// console.log(convertToZeros([5, 100, 0]))
+
+// function convertToZeros(arr) {
+//     return arr.map(elem => 0)
+// }
+// console.log(convertToZeros([1, 2, 3, 4, 5]))
