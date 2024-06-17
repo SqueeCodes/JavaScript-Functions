@@ -46,3 +46,13 @@
 //     return numnuts % 2 !== 0
 // }
 // console.log(isOdd(3))
+
+// function isEven(numnuts) {
+//     return numnuts % 2 === 0 ? 1 : -1;
+// }
+// console.log(isEven(2))
+
+function isLoggedInAndSubscribed(loggedIn, subscribed) {
+    return (loggedIn === 'LOGGED_IN') && (subscribed === 'SUBSCRIBED')
+}
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
