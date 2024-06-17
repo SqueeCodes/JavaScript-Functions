@@ -67,13 +67,22 @@
 // }
 // console.log(lengthArray([1, 2, 3, 4, 10]))
 
-function arrSum(arr) {
+// function arrSum(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; ++i) {
+//         sum = sum + arr[i];
+//     }
+//     return sum;
+
+// }
+
+// console.log(arrSum([2, 2, 2]));
+
+function progeressiveSum(num) {
     let sum = 0;
-    for (let i = 0; i < arr.length; ++i) {
-        sum = sum + arr[i];
+    for (let i = 1; i <= num; ++i) {
+        sum = sum + i;
     }
-    return sum;
-
+    return sum
 }
-
-console.log(arrSum([2, 2, 2]));
+console.log(progeressiveSum(4))
