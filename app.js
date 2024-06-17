@@ -32,7 +32,17 @@
 
 // console.log(oppositeBoolean(true));
 
-function isNotZero(number) {
-    return number !== 0
-}
-console.log(isNotZero(0))
+// function isNotZero(number) {
+//     return number !== 0
+// }
+// console.log(isNotZero(2))
+
+// function calcRemainder(num1, num2) {
+//     return num1 % num2
+// }
+// console.log(calcRemainder(10, 7))
+
+// function isOdd(numnuts) {
+//     return numnuts % 2 !== 0
+// }
+// console.log(isOdd(3))
