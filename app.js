@@ -14,7 +14,13 @@
 // }
 // console.log(addTOString('apple'));
 
-function sumGreaterThan100(num1, num2) {
-    return num1 + num2 > 100
-}
-console.log(sumGreaterThan100(20, 10))
+// function sumGreaterThan100(num1, num2) {
+//     return num1 + num2 >= 100
+// }
+// console.log(sumGreaterThan100(20, 10))
+
+// function lessThanOrEquals(numnuts) {
+//     return numnuts <= 0
+// }
+
+// console.log(lessThanOrEquals(-1))
