@@ -99,15 +99,31 @@
 // console.log(calcTime(90))
 
 
-function getMax(arr) {
-let maxIndex = arr[0]
+// function getMax(arr) {
+// let maxIndex = arr[0]
 
-    for (let i = 0; i < arr.length; ++i) {
-        if (arr[i] > maxIndex) {
-            maxIndex = arr[i];
-            }
-        }
-    return maxIndex
+//     for (let i = 1; i < arr.length; ++i) {
+//         if (arr[i] > maxIndex) {
+//             maxIndex = arr[i];
+//             }
+//         }
+//     return maxIndex
+
+// }
+// console.log(getMax([-100, -400, -200]))
+
+// function reverseString(str) {
+//     let flipIt = '';
+//     for (let i = str.length - 1; i >= 0 ; --i) {
+//         console.log(str[i])
+//     }
+//     return null
+// }
+// console.log(reverseString('abc'))
+
+function arrReverse(str) {
+    return str.split('').reverse().join('');
+
 
 }
-console.log(getMax([-100, -400, -200]))
+console.log(arrReverse('David'));
