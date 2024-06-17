@@ -121,9 +121,18 @@
 // }
 // console.log(reverseString('abc'))
 
-function arrReverse(str) {
-    return str.split('').reverse().join('');
+// function arrReverse(str) {
+//     return str.split('').reverse().join('');
 
 
+// }
+// console.log(arrReverse('David'));
+
+function convertToZeros(arr) {
+    let newArr = [];
+   for (let i = 0; i <arr.length; ++i) {
+       newArr[i] = 0
+    }
+    return newArr;
 }
-console.log(arrReverse('David'));
+console.log(convertToZeros([5, 100, 0]))
