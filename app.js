@@ -189,7 +189,20 @@
 // }
 // console.log(showRating(3.5));
 
+// function sortLowToHigh(numbers) {
+//         return numbers.sort((a, b) => a - b);
+// }
+// console.log(sortLowToHigh([1, 5, 0, 10, 4, 69]))
+
 function sortLowToHigh(numbers) {
-        return numbers.sort((a, b) => a - b);
+    return numbers.sort((a, b) => {
+        return b.price - a.price
+    });
 }
-console.log(sortLowToHigh([1, 5, 0, 10, 4, 69]))
+console.log(
+    sortLowToHigh([
+    {id:1, price: 50},
+    {id:2, price: 0},
+    {id:3, price: 500},
+])
+);
