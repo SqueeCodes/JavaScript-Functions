@@ -194,15 +194,22 @@
 // }
 // console.log(sortLowToHigh([1, 5, 0, 10, 4, 69]))
 
-function sortLowToHigh(numbers) {
-    return numbers.sort((a, b) => {
-        return b.price - a.price
-    });
+// function sortLowToHigh(numbers) {
+//     return numbers.sort((a, b) => {
+//         return b.price - a.price
+//     });
+// }
+// console.log(
+//     sortLowToHigh([
+//     {id:1, price: 50},
+//     {id:2, price: 0},
+//     {id:3, price: 500},
+// ])
+// );
+async function postsByUser(uid) {
+  const promise = await fetch("https://jsonplaceholder.typicode.com/users");
+  console.log(await promise.json());
 }
-console.log(
-    sortLowToHigh([
-    {id:1, price: 50},
-    {id:2, price: 0},
-    {id:3, price: 500},
-])
-);
+
+
+postsByUser(4);
