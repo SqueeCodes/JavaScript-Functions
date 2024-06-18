@@ -57,6 +57,8 @@
 // }
 // console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'))
 
+"intermediate challenges "
+
 // function falseyOrTruthy (elem1, elem2) {
 //     return !!elem1 ? elem1 : elem2
 // }
@@ -152,13 +154,37 @@
 //     return arr.filter(elem => !!elem === true)
 // }
 
-function removeFalsy(arr) {
-    let truthyArr = [];
-    for (let i = 0; i < arr.length; ++i) {
-        if (!!arr[i] === true) {
-            truthyArr.push(arr[i]);
+// function removeFalsy(arr) {
+//     let truthyArr = [];
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (!!arr[i] === true) {
+//             truthyArr.push(arr[i]);
+//         }
+//     }
+//     return truthyArr;
+// }
+// console.log(removeFalsy(['banana', 'ornch', 'apple', false, '', null, undefined, NaN]))
+
+// function convertToBoolean(arr) {
+//     return arr.map(elem => !!elem)
+// } 
+// console.log(convertToBoolean([500, 0, "David", "", []]))
+
+
+"advanced challenges"
+
+function showRating(rating) {
+    let ratings = "";
+    for ( let i = 0; i < Math.floor(rating); ++i) {
+        ratings += "*";
+        if (i !== Math.floor(rating) -1) {
+            ratings = ratings + " ";
+
         }
     }
-    return truthyArr;
+    if (!Number.isInteger(rating)) {
+        ratings += " ."
+    }
+    return ratings
 }
-console.log(removeFalsy(['banana', 'ornch', 'apple', false, '', null, undefined, NaN]))
+console.log(showRating(3.5));
