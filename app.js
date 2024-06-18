@@ -148,7 +148,7 @@
 // }
 // console.log(removeApples(['banana', 'apple', 'ornch', 'apple']));
 
-function removeApples(arr) {
-    return arr.filter(elem => elem !=='apple')
+function removeFalsy(arr) {
+    return arr.filter(elem => !!elem === true)
 }
-console.log(removeApples(['banana', 'ornch', 'apple', 'melon']))
+console.log(removeFalsy(['banana', 'ornch', 'apple', false, '', null, undefined, NaN]))
