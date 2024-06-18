@@ -138,12 +138,17 @@
 // }
 // console.log(convertToZeros([1, 2, 3, 4, 5]))
 
+// function removeApples(arr) {
+//     noApples = ([])
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] !== 'apple')
+//             noApples.push(arr[i]);
+//     }
+//     return noApples
+// }
+// console.log(removeApples(['banana', 'apple', 'ornch', 'apple']));
+
 function removeApples(arr) {
-    noApples = ([])
-    for (let i = 0; i < arr.length; ++i) {
-        if (arr[i] !== 'apple')
-            noApples.push(arr[i]);
-    }
-    return noApples
+    return arr.filter(elem => elem !=='apple')
 }
-console.log(removeApples(['banana', 'apple', 'ornch', 'apple']));
+console.log(removeApples(['banana', 'ornch', 'apple', 'melon']))
